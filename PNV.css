@@ -10,26 +10,51 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    flex-direction: column;
+    align-items: center;
 }
-/* Định dạng cho header cố định */
 #fixed-header {
-    position: fixed; /* Giữ cố định phần tử */
-    top: 0; /* Cố định ở đầu trang */
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: #32c671;
     color: white;
-    text-align: center;
     padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Đảm bảo phần tử nằm trên các phần khác */
+    z-index: 1000;
 }
 
+/* Định dạng cho nội dung của tiêu đề */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Định dạng cho hình ảnh bên cạnh tiêu đề */
+.header-avatar {
+    width: 50px; /* Kích thước của hình ảnh */
+    height: 50px;
+    border-radius: 50%; /* Bo tròn hình ảnh */
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và tiêu đề */
+    object-fit: cover; /* Giữ tỷ lệ hình ảnh */
+}
 /* Thêm khoảng cách để tránh che mất nội dung khi cuộn */
 .products {
     margin-top: 100px; /* Đảm bảo nội dung không bị che bởi header */
 }
+/* Ảnh bên trái */
+.top-banner {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-top: 150px; /* Tạo khoảng cách giữa hình ảnh và nội dung */
 
+}
 /* Định dạng cho phần số tiền */
 #balance {
     font-size: 1.5rem;
@@ -46,12 +71,12 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
 }
 
-.balance {
-    font-size: 2rem;
+#balance {
+    font-size: 3rem;
     background-color: #32c671;
     color: #fff;
     padding: 10px;
@@ -94,7 +119,7 @@ h1 {
 }
 
 .product-card p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 

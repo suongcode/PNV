@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spend Money</title>
+    <link rel="stylesheet" href="PNV.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header id="fixed-header">
+            <h1 id="header-title">Spend Money</h1>
+            <div id="balance">119.126.200.000.000 VND</div>
+        </header>
+
+        <!-- Products Grid -->
+        <div class="products">
+         
+            <div class="product-card">
+                <img src="bimbim.jpg" alt="Product Image">
+                <h3>bim bim</h3>
+                <p>6,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 6000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 6000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tông.png" alt="Product Image">
+                <h3>Tông Lào</h3>
+                <p>10,000 VDN</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-2" onclick="sellProduct(2, 10000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-2" readonly>
+                    <button class="buy-btn" onclick="buyProduct(2, 10000)">Buy</button>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="pho.jpg" alt="Product Image">
+                <h3>Phở</h3>
+                <p>30,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-3" onclick="sellProduct(3, 30000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-3" readonly>
+                    <button class="buy-btn" onclick="buyProduct(3, 30000)">Buy</button>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="chicken.png" alt="Product Image">
+                <h3>Gà rán</h3>
+                <p>100,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-4" onclick="sellProduct(4, 100000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-4" readonly>
+                    <button class="buy-btn" onclick="buyProduct(4, 100000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tom.png" alt="Product Image">
+                <h3>Tôm hùm</h3>
+                <p>1,500,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-5" onclick="sellProduct(5, 1500000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-5" readonly>
+                    <button class="buy-btn" onclick="buyProduct(5, 1500000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="crab.jfif" alt="Product Image">
+                <h3>Cua hoàng đế</h3>
+                <p>3,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-6" onclick="sellProduct(6, 3000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-6" readonly>
+                    <button class="buy-btn" onclick="buyProduct(6, 3000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="air pods.jfif" alt="Product Image">
+                <h3>Air pods</h3>
+                <p>5,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-7" onclick="sellProduct(7, 5000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-7" readonly>
+                    <button class="buy-btn" onclick="buyProduct(7, 5000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="dog.jpg" alt="Product Image">
+                <h3>Chó</h3>
+                <p>10,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-8" onclick="sellProduct(8, 10000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-8" readonly>
+                    <button class="buy-btn" onclick="buyProduct(8, 10000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="cat.png" alt="Product Image">
+                <h3>Mèo</h3>
+                <p>20,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-9" onclick="sellProduct(9, 20000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-9" readonly>
+                    <button class="buy-btn" onclick="buyProduct(9, 20000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="ps5.jpg" alt="Product Image">
+                <h3>PS5</h3>
+                <p>15,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-10" onclick="sellProduct(10, 15000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-10" readonly>
+                    <button class="buy-btn" onclick="buyProduct(10, 15000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="mac.jpg" alt="Product Image">
+                <h3>MacBook</h3>
+                <p>25,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-11" onclick="sellProduct(11, 25000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-11" readonly>
+                    <button class="buy-btn" onclick="buyProduct(11, 25000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="nike.png" alt="Product Image">
+                <h3>Giày Nike</h3>
+                <p>50,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-12" onclick="sellProduct(12, 30000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-12" readonly>
+                    <button class="buy-btn" onclick="buyProduct(12, 30000000)">Buy</button>
+                </div>
+            </div>
+             <div class="product-card">
+                <img src="gold.jpg" alt="Product Image">
+                <h3>Vàng</h3>
+                <p>100,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-13" onclick="sellProduct(13, 100000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-13" readonly>
+                    <button class="buy-btn" onclick="buyProduct(13, 100000000)">Buy</button>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="kc.png" alt="Product Image">
+                <h3>Kim Cương</h3>
+                <p>200,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-14" onclick="sellProduct(14, 200000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-14" readonly>
+                    <button class="buy-btn" onclick="buyProduct(14, 200000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="den.png" alt="Product Image">
+                <h3>Xe máy SH</h3>  
+                <p>500,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-15" onclick="sellProduct(15, 500000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-15" readonly>
+                    <button class="buy-btn" onclick="buyProduct(15, 500000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="apple.jpg" alt="Product Image">
+                <h3>Iphone</h3>
+                <p>900,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-16" onclick="sellProduct(16, 900000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-16" readonly>
+                    <button class="buy-btn" onclick="buyProduct(16, 900000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="i10.jpg" alt="Product Image">
+                <h3>Ô tô (nhỏ)</h3>
+                <p>1,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-17" onclick="sellProduct(17, 1000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-17" readonly>
+                    <button class="buy-btn" onclick="buyProduct(17, 1000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="mec.jpg" alt="Product Image">
+                <h3>Ô tô (to)</h3>
+                <p>5,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-18" onclick="sellProduct(18, 5000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-18" readonly>
+                    <button class="buy-btn" onclick="buyProduct(18, 5000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="lambo.png" alt="Product Image">
+                <h3>Siêu xe</h3>
+                <p>10,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-19" onclick="sellProduct(19, 10000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-19" readonly>
+                    <button class="buy-btn" onclick="buyProduct(19, 10000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="apt.jpg" alt="Product Image">
+                <h3>Nhà chung cư</h3>
+                <p>15,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-20" onclick="sellProduct(20, 15000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-20" readonly>
+                    <button class="buy-btn" onclick="buyProduct(20, 15000000000)">Buy</button>
+                </div>
+            </div>  
+            <div class="product-card">
+                <img src="bulding.png" alt="Product Image">
+                <h3>Tòa nhà</h3>
+                <p>100,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-21" onclick="sellProduct(21, 100000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-21" readonly>
+                    <button class="buy-btn" onclick="buyProduct(21, 100000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="rolex.jpg" alt="Product Image">
+                <h3>Rolex</h3>
+                <p>50,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-22" onclick="sellProduct(22, 50000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-22" readonly>
+                    <button class="buy-btn" onclick="buyProduct(22, 50000000000)">Buy</button>
+                </div>
+            </div> <div class="product-card">
+                <img src="lion.png" alt="Product Image">
+                <h3>Sư tử</h3>
+                <p>2,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-23" onclick="sellProduct(23, 2000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-23" readonly>
+                    <button class="buy-btn" onclick="buyProduct(23, 2000000000)">Buy</button>
+                </div>
+            </div> <div class="product-card">
+                <img src="Nha-hang-sang-trong-1.jpg" alt="Product Image">
+                <h3>Nhà hàng</h3>
+                <p>15,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-24" onclick="sellProduct(24, 15000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-24" readonly>
+                    <button class="buy-btn" onclick="buyProduct(24, 15000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="lisa.jpg" alt="Product Image">
+                <h3>Mona Lisa</h3>
+                <p>150,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-25" onclick="sellProduct(25, 150000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-25" readonly>
+                    <button class="buy-btn" onclick="buyProduct(25, 150000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="helicopter.jpg" alt="Product Image">
+                <h3>Trực thăng</h3>
+                <p>250,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-26" onclick="sellProduct(26, 250000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-26" readonly>
+                    <button class="buy-btn" onclick="buyProduct(26, 250000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="boat.jpg" alt="Product Image">
+                <h3>Du thuyền</h3>
+                <p>50,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-27" onclick="sellProduct(27, 50000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-27" readonly>
+                    <button class="buy-btn" onclick="buyProduct(27, 50000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="tyrannosaurus.png" alt="Product Image">
+                <h3>Khủng long</h3>
+                <p>1,000,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-28" onclick="sellProduct(28,1000000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-28" readonly>
+                    <button class="buy-btn" onclick="buyProduct(28,1000000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="slave.jfif" alt="Product Image">
+                <h3>Nô lệ daden</h3>
+                <p>1,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-29" onclick="sellProduct(29, 10000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-29" readonly>
+                    <button class="buy-btn" onclick="buyProduct(29, 10000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="human.jpg" alt="Product Image">
+                <h3>Người da trắng</h3>
+                <p>100,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-30" onclick="sellProduct(30, 100000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-30" readonly>
+                    <button class="buy-btn" onclick="buyProduct(30, 100000000000)">Buy</button>
+                </div>
+            </div>  <div class="product-card">
+                <img src="tank.jpg" alt="Product Image">
+                <h3>Xe tăng</h3>
+                <p>70,000,000,000 VND</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-31" onclick="sellProduct(31, 70000000000)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-31" readonly>
+                    <button class="buy-btn" onclick="buyProduct(31, 70000000000)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="fat.jfif" alt="Product Image">
+                <h3>Mẹ bạn</h3>
+                <p>100000000000000000000000000</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-32" onclick="sellProduct(32, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-32" readonly>
+                    <button class="buy-btn" onclick="buyProduct(32, 2)">Buy</button>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-33" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-33" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div> <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-34" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-34" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-35" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-35" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-36" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-36" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-37" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-37" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-38" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-38" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-39" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-39" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-40" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-40" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>  <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div> <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div> <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pig.png" alt="Product Image">
+                <h3>Big Mac</h3>
+                <p>$2</p>
+               <div class="controls">
+                    <button class="sell-btn" id="sell-1" onclick="sellProduct(1, 2)" disabled>Sell</button>
+                    <input type="number" value="0" min="0" id="qty-1" readonly>
+                    <button class="buy-btn" onclick="buyProduct(1, 2)">Buy</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+       <script src="PNV.js"></script>
+</body>
+</html>

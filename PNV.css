@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+/* Định dạng cho header cố định */
+#fixed-header {
+    position: fixed; /* Giữ cố định phần tử */
+    top: 0; /* Cố định ở đầu trang */
+    left: 0;
+    width: 100%;
+    background-color: #32c671;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Đảm bảo phần tử nằm trên các phần khác */
+}
+
+/* Thêm khoảng cách để tránh che mất nội dung khi cuộn */
+.products {
+    margin-top: 100px; /* Đảm bảo nội dung không bị che bởi header */
+}
+
+/* Định dạng cho phần số tiền */
+#balance {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.balance {
+    font-size: 2rem;
+    background-color: #32c671;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Định dạng cho hình ảnh sản phẩm */
+.product-card img {
+    width: 200px;
+    height: 200px;  /* Giữ tỷ lệ của ảnh */
+    margin-bottom: 10px;
+    border-radius: 10px; /* Tùy chọn: bo tròn góc */
+    transition: transform 0.3s ease; /* Hiệu ứng khi di chuột qua ảnh */
+}
+
+/* Tùy chọn: Hiệu ứng phóng to khi di chuột vào ảnh */
+.product-card img:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi di chuột */
+}
+
+
+.product-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls input {
+    width: 50px;
+    text-align: center;
+}
+
+.sell-btn, .buy-btn {
+    background-color: #32c671;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sell-btn:hover, .buy-btn:hover {
+    background-color: #28a358;
+}
